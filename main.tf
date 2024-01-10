@@ -28,6 +28,14 @@ resource "aws_s3_bucket" "example7" {
   }
 }
 
+resource "aws_s3_bucket" "example8" {
+  bucket = "terraformcloud-tfci8"
+
+  tags = {
+    Name        = "My bucket"
+    Environment = "Dev"
+  }
+}
 # resource "random_pet" "sg" {}
 
 # data "aws_ami" "ubuntu" {
